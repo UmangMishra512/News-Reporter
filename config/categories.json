@@ -1,0 +1,126 @@
+{
+  "categories": {
+    "politics": {
+      "label": "🏛️ Politics",
+      "color": 3447003,
+      "emoji": "🏛️",
+      "keywords": ["parliament", "lok sabha", "rajya sabha", "modi", "bjp", "congress", "election", "minister", "government", "policy", "bill", "amendment", "cabinet", "political", "party", "vote", "mla", "mp", "chief minister", "governor", "president"],
+      "weight": 9
+    },
+    "finance": {
+      "label": "💰 Finance",
+      "color": 16776960,
+      "emoji": "💰",
+      "keywords": ["rbi", "repo rate", "inflation", "gdp", "fiscal", "budget", "tax", "gst", "revenue", "deficit", "debt", "forex", "rupee", "dollar", "bank", "loan", "interest rate", "npa", "credit", "monetary policy"],
+      "weight": 8
+    },
+    "economy": {
+      "label": "📊 Economy",
+      "color": 10181046,
+      "emoji": "📊",
+      "keywords": ["economy", "growth", "recession", "unemployment", "trade", "export", "import", "manufacturing", "pmi", "iip", "consumer", "demand", "supply", "production", "agriculture", "gdp", "gdp growth"],
+      "weight": 8
+    },
+    "business": {
+      "label": "💼 Business",
+      "color": 7419530,
+      "emoji": "💼",
+      "keywords": ["company", "corporate", "merger", "acquisition", "deal", "ipo", "quarterly results", "earnings", "revenue", "profit", "loss", "ceo", "board", "shareholder", "dividend", "listing", "tata", "reliance", "infosys", "wipro", "hdfc"],
+      "weight": 7
+    },
+    "stock_market": {
+      "label": "📈 Stock Market",
+      "color": 3066993,
+      "emoji": "📈",
+      "keywords": ["sensex", "nifty", "bse", "nse", "stock", "share", "equity", "market", "rally", "crash", "ipo", "sebi", "mutual fund", "etf", "derivative", "futures", "options", "fii", "dii"],
+      "weight": 7
+    },
+    "technology": {
+      "label": "💻 Technology",
+      "color": 1127128,
+      "emoji": "💻",
+      "keywords": ["technology", "tech", "software", "hardware", "digital", "internet", "cyber", "5g", "semiconductor", "chip", "cloud", "data center", "it sector", "app", "platform", "saas", "fintech"],
+      "weight": 7
+    },
+    "ai": {
+      "label": "🤖 AI & ML",
+      "color": 11027200,
+      "emoji": "🤖",
+      "keywords": ["artificial intelligence", "machine learning", "ai", "ml", "deep learning", "llm", "chatgpt", "generative ai", "robot", "automation", "neural network", "openai", "google ai", "indiaai", "nvidia"],
+      "weight": 8
+    },
+    "startups": {
+      "label": "🚀 Startups",
+      "color": 16753920,
+      "emoji": "🚀",
+      "keywords": ["startup", "funding", "series a", "series b", "unicorn", "venture capital", "vc", "seed round", "incubator", "accelerator", "founder", "entrepreneur", "investment round", "valuation"],
+      "weight": 6
+    },
+    "sports": {
+      "label": "🏏 Sports",
+      "color": 15158332,
+      "emoji": "🏏",
+      "keywords": ["cricket", "ipl", "bcci", "india vs", "test match", "odi", "t20", "world cup", "olympics", "football", "hockey", "badminton", "tennis", "athlete", "player", "match", "tournament", "championship", "gold medal"],
+      "weight": 6
+    },
+    "national_security": {
+      "label": "🛡️ National Security",
+      "color": 10038562,
+      "emoji": "🛡️",
+      "keywords": ["military", "army", "navy", "air force", "defence", "border", "pakistan", "china", "terrorist", "security", "intelligence", "cia", "raw", "ib", "border dispute", "surgical strike", "ceasefire", "loc", "lac"],
+      "weight": 10
+    },
+    "government": {
+      "label": "🏟️ Government",
+      "color": 5793266,
+      "emoji": "🏟️",
+      "keywords": ["government", "scheme", "yojana", "pib", "announcement", "policy", "regulation", "ministry", "department", "psu", "public sector", "tender", "contract", "cabinet decision"],
+      "weight": 8
+    },
+    "crime": {
+      "label": "⚖️ Crime",
+      "color": 10003200,
+      "emoji": "⚖️",
+      "keywords": ["crime", "arrested", "murder", "fraud", "scam", "cbi", "ed", "police", "court", "verdict", "sentenced", "bail", "conviction", "probe", "investigation", "fir", "smuggling", "money laundering"],
+      "weight": 7
+    },
+    "accidents": {
+      "label": "🚨 Accidents",
+      "color": 16711680,
+      "emoji": "🚨",
+      "keywords": ["accident", "crash", "collision", "fire", "blast", "explosion", "derailment", "train accident", "road accident", "plane crash", "casualties", "dead", "injured", "rescue"],
+      "weight": 8
+    },
+    "natural_disasters": {
+      "label": "🌊 Natural Disasters",
+      "color": 3066993,
+      "emoji": "🌊",
+      "keywords": ["earthquake", "flood", "cyclone", "landslide", "drought", "tsunami", "heatwave", "storm", "disaster", "relief", "ndrf", "sdrf", "evacuation", "affected"],
+      "weight": 9
+    },
+    "international": {
+      "label": "🌏 International",
+      "color": 2067276,
+      "emoji": "🌏",
+      "keywords": ["india-", "bilateral", "mea", "ambassador", "foreign policy", "un", "g20", "brics", "sco", "trade agreement", "sanctions", "diplomatic", "ties", "relations"],
+      "weight": 7
+    },
+    "general": {
+      "label": "📰 General",
+      "color": 9807270,
+      "emoji": "📰",
+      "keywords": [],
+      "weight": 3
+    }
+  },
+  "ranking_weights": {
+    "national_impact":       0.25,
+    "public_importance":     0.20,
+    "breaking_status":       0.15,
+    "trusted_publisher_count": 0.10,
+    "government_significance": 0.10,
+    "financial_impact":      0.08,
+    "sports_importance":     0.05,
+    "category_weight":       0.07
+  }
+}

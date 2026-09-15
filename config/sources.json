@@ -1,0 +1,313 @@
+{
+  "sources": [
+    {
+      "id": "google_news_india",
+      "name": "Google News India",
+      "publisher": "Google News",
+      "rss_url": "https://news.google.com/rss/headlines/section/geo/IN?hl=en-IN&gl=IN&ceid=IN:en",
+      "method": "google_news_rss",
+      "categories": ["general"],
+      "reliability": 0.95,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "pib_india",
+      "name": "Press Information Bureau",
+      "publisher": "PIB India",
+      "rss_url": "https://pib.gov.in/RssMain.aspx?ModId=6&Lang=1&Regid=3",
+      "method": "rss",
+      "categories": ["government"],
+      "reliability": 0.99,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "reuters_india",
+      "name": "Reuters India",
+      "publisher": "Reuters",
+      "rss_url": "https://feeds.reuters.com/reuters/INtopNews",
+      "method": "rss",
+      "categories": ["general", "international"],
+      "reliability": 0.98,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "the_hindu",
+      "name": "The Hindu",
+      "publisher": "The Hindu",
+      "rss_url": "https://www.thehindu.com/feeder/default.rss",
+      "method": "rss",
+      "categories": ["general", "politics"],
+      "reliability": 0.96,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "the_hindu_national",
+      "name": "The Hindu - National",
+      "publisher": "The Hindu",
+      "rss_url": "https://www.thehindu.com/news/national/feeder/default.rss",
+      "method": "rss",
+      "categories": ["politics", "government"],
+      "reliability": 0.96,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "indian_express",
+      "name": "Indian Express",
+      "publisher": "Indian Express",
+      "rss_url": "https://indianexpress.com/feed/",
+      "method": "rss",
+      "categories": ["general", "politics"],
+      "reliability": 0.94,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "ndtv_top",
+      "name": "NDTV Top Stories",
+      "publisher": "NDTV",
+      "rss_url": "https://feeds.feedburner.com/ndtvnews-top-stories",
+      "method": "rss",
+      "categories": ["general"],
+      "reliability": 0.92,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "ndtv_india",
+      "name": "NDTV India",
+      "publisher": "NDTV",
+      "rss_url": "https://feeds.feedburner.com/ndtvnews-india-news",
+      "method": "rss",
+      "categories": ["politics", "national_security"],
+      "reliability": 0.92,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "economic_times",
+      "name": "Economic Times",
+      "publisher": "Economic Times",
+      "rss_url": "https://economictimes.indiatimes.com/rssfeedstopstories.cms",
+      "method": "rss",
+      "categories": ["finance", "economy", "business"],
+      "reliability": 0.93,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "economic_times_markets",
+      "name": "Economic Times Markets",
+      "publisher": "Economic Times",
+      "rss_url": "https://economictimes.indiatimes.com/markets/rssfeeds/1977021501.cms",
+      "method": "rss",
+      "categories": ["stock_market", "finance"],
+      "reliability": 0.93,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "livemint",
+      "name": "Livemint",
+      "publisher": "Livemint",
+      "rss_url": "https://www.livemint.com/rss/news",
+      "method": "rss",
+      "categories": ["finance", "economy", "business"],
+      "reliability": 0.92,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "business_standard",
+      "name": "Business Standard",
+      "publisher": "Business Standard",
+      "rss_url": "https://www.business-standard.com/rss/home_page_top_stories.rss",
+      "method": "rss",
+      "categories": ["business", "economy", "finance"],
+      "reliability": 0.93,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "moneycontrol",
+      "name": "Moneycontrol",
+      "publisher": "Moneycontrol",
+      "rss_url": "https://www.moneycontrol.com/rss/latestnews.xml",
+      "method": "rss",
+      "categories": ["stock_market", "finance", "business"],
+      "reliability": 0.90,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "times_of_india",
+      "name": "Times of India",
+      "publisher": "Times of India",
+      "rss_url": "https://timesofindia.indiatimes.com/rssfeedstopstories.cms",
+      "method": "rss",
+      "categories": ["general"],
+      "reliability": 0.88,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "hindustan_times",
+      "name": "Hindustan Times",
+      "publisher": "Hindustan Times",
+      "rss_url": "https://www.hindustantimes.com/feeds/rss/india-news/rssfeed.xml",
+      "method": "rss",
+      "categories": ["general", "politics"],
+      "reliability": 0.88,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "espn_cricinfo",
+      "name": "ESPN Cricinfo",
+      "publisher": "ESPN Cricinfo",
+      "rss_url": "https://static.cricinfo.com/rss/livescores.xml",
+      "method": "rss",
+      "categories": ["sports"],
+      "reliability": 0.95,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "ani_news",
+      "name": "ANI News",
+      "publisher": "ANI",
+      "rss_url": "https://aninews.in/rss/",
+      "method": "rss",
+      "categories": ["general", "politics"],
+      "reliability": 0.88,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "inc42",
+      "name": "Inc42",
+      "publisher": "Inc42",
+      "rss_url": "https://inc42.com/feed/",
+      "method": "rss",
+      "categories": ["startups", "technology"],
+      "reliability": 0.90,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "yourstory",
+      "name": "YourStory",
+      "publisher": "YourStory",
+      "rss_url": "https://yourstory.com/feed",
+      "method": "rss",
+      "categories": ["startups"],
+      "reliability": 0.88,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "techcrunch_india",
+      "name": "TechCrunch - India tag",
+      "publisher": "TechCrunch",
+      "rss_url": "https://techcrunch.com/tag/india/feed/",
+      "method": "rss",
+      "categories": ["technology", "startups"],
+      "reliability": 0.93,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "google_news_india_tech",
+      "name": "Google News India Tech",
+      "publisher": "Google News",
+      "rss_url": "https://news.google.com/rss/search?q=india+technology&hl=en-IN&gl=IN&ceid=IN:en",
+      "method": "google_news_rss",
+      "categories": ["technology", "ai"],
+      "reliability": 0.90,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "google_news_india_startups",
+      "name": "Google News India Startups",
+      "publisher": "Google News",
+      "rss_url": "https://news.google.com/rss/search?q=india+startup&hl=en-IN&gl=IN&ceid=IN:en",
+      "method": "google_news_rss",
+      "categories": ["startups"],
+      "reliability": 0.90,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "google_news_india_politics",
+      "name": "Google News India Politics",
+      "publisher": "Google News",
+      "rss_url": "https://news.google.com/rss/search?q=india+politics+government&hl=en-IN&gl=IN&ceid=IN:en",
+      "method": "google_news_rss",
+      "categories": ["politics", "government"],
+      "reliability": 0.90,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "google_news_india_finance",
+      "name": "Google News India Finance",
+      "publisher": "Google News",
+      "rss_url": "https://news.google.com/rss/search?q=india+stock+market+economy&hl=en-IN&gl=IN&ceid=IN:en",
+      "method": "google_news_rss",
+      "categories": ["finance", "stock_market", "economy"],
+      "reliability": 0.90,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "mea_india",
+      "name": "Ministry of External Affairs",
+      "publisher": "MEA India",
+      "rss_url": "https://www.mea.gov.in/rss-feeds.htm?50/rss-feeds",
+      "method": "rss",
+      "categories": ["international", "government"],
+      "reliability": 0.97,
+      "enabled": true,
+      "priority": 1
+    },
+    {
+      "id": "ndtv_sports",
+      "name": "NDTV Sports",
+      "publisher": "NDTV",
+      "rss_url": "https://feeds.feedburner.com/ndtvsports-latest",
+      "method": "rss",
+      "categories": ["sports"],
+      "reliability": 0.90,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "the_wire",
+      "name": "The Wire",
+      "publisher": "The Wire",
+      "rss_url": "https://thewire.in/feed",
+      "method": "rss",
+      "categories": ["politics", "national_security"],
+      "reliability": 0.88,
+      "enabled": true,
+      "priority": 2
+    },
+    {
+      "id": "newsapi_india",
+      "name": "NewsAPI India Top Headlines",
+      "publisher": "NewsAPI",
+      "api_url": "https://newsapi.org/v2/top-headlines?country=in&pageSize=30",
+      "method": "api",
+      "categories": ["general"],
+      "reliability": 0.92,
+      "enabled": false,
+      "priority": 1,
+      "requires_api_key": "news_api_key"
+    }
+  ]
+}

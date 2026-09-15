@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+storage/logs/
+news.db
+news.db-shm
+news.db-wal
+.env
+.agents/
+*.log
+.DS_Store

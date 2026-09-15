@@ -1,0 +1,53 @@
+# ============================================================
+#   India News Intelligence Platform — Python Dependencies
+# ============================================================
+
+# ── Async HTTP & Network ─────────────────────────────────────
+aiohttp>=3.9.3
+aiosqlite>=0.20.0
+httpx>=0.27.0
+
+# ── RSS / Feed Parsing ────────────────────────────────────────
+feedparser>=6.0.11
+
+# ── HTML Parsing ──────────────────────────────────────────────
+beautifulsoup4>=4.12.3
+lxml>=5.1.0
+
+# ── Browser Automation (optional — for last-resort scraping) ──
+playwright>=1.44.0
+
+# ── Discord Bot ───────────────────────────────────────────────
+discord.py>=2.3.2
+
+# ── AI / LLM Providers ────────────────────────────────────────
+google-generativeai>=0.7.0
+openai>=1.30.0
+groq>=0.9.0
+
+# ── Semantic Similarity (local, no API cost) ──────────────────
+sentence-transformers>=3.0.0
+torch>=2.2.0
+numpy>=1.26.0
+
+# ── Scheduling ────────────────────────────────────────────────
+APScheduler>=3.10.4
+
+# ── Configuration ─────────────────────────────────────────────
+python-dotenv>=1.0.1
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# ── Logging ───────────────────────────────────────────────────
+structlog>=24.1.0
+loguru>=0.7.2
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dateutil>=2.9.0
+pytz>=2024.1
+tldextract>=5.1.2
+aiofiles>=23.2.1
+tenacity>=8.3.0
+
+# ── Web Dashboard (optional) ──────────────────────────────────
+aiohttp-cors>=0.7.0

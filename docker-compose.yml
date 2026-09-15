@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  news-platform:
+    build: .
+    container_name: india-news-platform
+    restart: unless-stopped
+    env_file: .env
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./storage:/app/storage
+    environment:
+      - PYTHONUNBUFFERED=1
+      - DATABASE_PATH=/app/storage/news.db
+      - LOG_DIR=/app/storage/logs
+    healthcheck:
+      test: ["CMD", "python", "-c", "import aiosqlite"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "5"

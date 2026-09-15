@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>India News Intelligence Platform — Dashboard</title>
+  <meta name="description" content="Real-time monitoring dashboard for the multi-agent India News Intelligence Platform" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=3" />
+</head>
+<body>
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-flag">🇮🇳</span>
+        <div class="logo-text">
+          <h1>India News Intelligence</h1>
+          <span class="logo-sub">Multi-Agent AI Newsroom</span>
+        </div>
+      </div>
+      <div class="header-status">
+        <div class="status-dot" id="system-status-dot"></div>
+        <span class="status-text" id="system-status-text">Connecting...</span>
+        <span class="last-updated" id="last-updated">–</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Stats Row -->
+    <section class="stats-grid">
+      <div class="stat-card glass">
+        <div class="stat-icon">📡</div>
+        <div class="stat-body">
+          <div class="stat-value" id="stat-fetched">–</div>
+          <div class="stat-label">Articles Fetched</div>
+        </div>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">🧬</div>
+        <div class="stat-body">
+          <div class="stat-value" id="stat-deduped">–</div>
+          <div class="stat-label">After Dedup</div>
+        </div>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">✅</div>
+        <div class="stat-body">
+          <div class="stat-value" id="stat-published">–</div>
+          <div class="stat-label">Published</div>
+        </div>
+      </div>
+      <div class="stat-card glass">
+        <div class="stat-icon">⚡</div>
+        <div class="stat-body">
+          <div class="stat-value" id="stat-duration">–</div>
+          <div class="stat-label">Last Run Duration</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Two-column layout -->
+    <div class="two-col">
+
+      <!-- Agent Health -->
+      <section class="panel glass">
+        <div class="panel-header">
+          <h2>🤖 Agent Health</h2>
+          <div class="badge" id="agents-online-badge">0 Online</div>
+        </div>
+        <div class="agent-list" id="agent-list">
+          <div class="loading-pulse">Loading agents...</div>
+        </div>
+      </section>
+
+      <!-- Recent Stories -->
+      <section class="panel glass">
+        <div class="panel-header">
+          <h2>📰 Latest Published Stories</h2>
+          <div class="badge badge-blue" id="stories-count-badge">0 Today</div>
+        </div>
+        <div class="story-list" id="story-list">
+          <div class="loading-pulse">Loading stories...</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Incidents -->
+    <section class="panel glass">
+      <div class="panel-header">
+        <h2>🚨 Open Incidents</h2>
+        <div class="badge badge-red" id="incidents-badge">0</div>
+      </div>
+      <div class="incident-list" id="incident-list">
+        <div class="loading-pulse">Loading incidents...</div>
+      </div>
+    </section>
+    <!-- Command Centre -->
+    <section class="panel glass">
+      <div class="panel-header">
+        <h2>💬 Command Centre</h2>
+      </div>
+      <div class="command-centre-container" id="command-centre-container">
+        <div class="chat-history" id="chat-history">
+          <div class="chat-message system-message">Command centre ready. Type '/news' to trigger a news run.</div>
+        </div>
+        <div class="chat-input-wrapper">
+          <input type="text" id="command-input" placeholder="Type a command (e.g. /news, /breaking)..." autocomplete="off" />
+          <button id="command-send-btn">Send</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Performance Chart -->
+    <section class="panel glass">
+      <div class="panel-header">
+        <h2>📊 Run History</h2>
+      </div>
+      <div class="chart-container" id="chart-container">
+        <canvas id="perf-chart"></canvas>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>India News Intelligence Platform</span>
+    <span>•</span>
+    <span>Powered by Multi-Agent AI</span>
+    <span>•</span>
+    <span id="footer-time"></span>
+  </footer>
+
+  <script src="app.js?v=3"></script>
+</body>
+</html>
