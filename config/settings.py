@@ -58,7 +58,7 @@ class Settings(BaseSettings):
     agent_stale_threshold_seconds: int = Field(default=180, ge=30)
 
     # ── Dashboard ─────────────────────────────────────────────
-    dashboard_host: str = Field(default="127.0.0.1", description="Host/IP for dashboard web server")
+    dashboard_host: str = Field(default="0.0.0.0", description="Host/IP for dashboard web server")
     dashboard_port: int = Field(default=8080, ge=1024, le=65535)
     enable_dashboard: bool = Field(default=True)
 

@@ -112,11 +112,12 @@ async def main(args: argparse.Namespace) -> None:
     # ── Optional: start web dashboard ─────────────────────────
     dashboard_task = None
     if settings.enable_dashboard and not args.once:
+        port_to_use = int(os.environ.get("PORT", settings.dashboard_port))
         dashboard_task = asyncio.create_task(
             _start_dashboard(
-                port=settings.dashboard_port,
+                port=port_to_use,
                 ops_manager=ops_manager,
-                host=getattr(settings, "dashboard_host", "127.0.0.1"),
+                host=getattr(settings, "dashboard_host", "0.0.0.0"),
             ),
             name="dashboard",
         )
@@ -172,7 +173,7 @@ async def _shutdown(
     log.info("Platform shutdown complete.")
 
 
-async def _start_dashboard(port: int, ops_manager=None, host: str = "127.0.0.1") -> None:
+async def _start_dashboard(port: int, ops_manager=None, host: str = "0.0.0.0") -> None:
     """Serve the web dashboard as a static file server."""
     try:
         import aiohttp
