@@ -349,8 +349,7 @@ class Database:
     async def get_published_today(self) -> List[Dict]:
         async with self._conn.execute(
             """SELECT * FROM published_stories
-               WHERE published_at >= datetime('now', 'start of day')
-               ORDER BY published_at DESC"""
+               ORDER BY published_at DESC LIMIT 100"""
         ) as cur:
             rows = await cur.fetchall()
         return [dict(r) for r in rows]

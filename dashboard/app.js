@@ -149,7 +149,7 @@ function renderStories(stories) {
 
   badge.textContent = `${stories.length} Today`;
 
-  const html = stories.slice(0, 10).map((s, i) => {
+  const html = stories.slice(0, 100).map((s, i) => {
     const catColor = CATEGORY_COLORS[s.category] || '#6b7280';
     const pub = s.published_at ? new Date(s.published_at + 'Z').toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' }) : '';
     return `
