@@ -214,22 +214,11 @@ class DeduplicationAgent:
         return min(members, key=lambda x: score(x[1]))[1]
 
     async def _load_model(self):
-        """Lazy-load the sentence-transformer model."""
-        if self._model is not None:
-            return self._model
-        try:
-            loop = asyncio.get_event_loop()
-            from sentence_transformers import SentenceTransformer
-            self._model = await loop.run_in_executor(
-                None,
-                lambda: SentenceTransformer("all-MiniLM-L6-v2")
-            )
-            log.info("Sentence-transformer model loaded: all-MiniLM-L6-v2")
-        except ImportError:
-            log.warning("sentence-transformers not installed. Run: pip install sentence-transformers")
-        except Exception as e:
-            log.error(f"Failed to load sentence-transformer: {e}")
-        return self._model
+        """Lazy-load the sentence-transformer model. Disabled for Render Free Tier (512MB RAM)."""
+        if getattr(self, "_model_warning_printed", False) is False:
+            log.warning("Semantic dedup disabled to prevent out-of-memory errors on Render Free Tier.")
+            self._model_warning_printed = True
+        return None
 
     # ── Helpers ──────────────────────────────────────────────
 
